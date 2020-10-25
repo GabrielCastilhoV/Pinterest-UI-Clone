@@ -5,21 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pinterest UI Clone</title>
 
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
     <header>
       <h3>Pinterest</h3>
 
       <nav>
+        <div id="darkmode">
+          <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <i class="moon"></i>
+            <i class="sun"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
         <ul>
-          <li><a href="#">Sobre</a></li>
+          <li><a class="list" href="#">Sobre</a></li>
         </ul>
         <ul>
-          <li><a href="#">Business</a></li>
+          <li><a class="list" href="#">Business</a></li>
         </ul>
         <ul>
-          <li><a href="#">Blog</a></li>
+          <li><a class="list" href="#">Blog</a></li>
         </ul>
 
         <div class="buttons">
@@ -255,6 +263,7 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/dark-mode.js"></script>
   </body>
 </html>

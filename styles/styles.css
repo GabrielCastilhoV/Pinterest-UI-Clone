@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -88,6 +89,77 @@ header nav .buttons .login {
 header nav .buttons .signup {
   margin-left: 16px;
   background: #efefef;
+}
+
+body.dark {
+  background: #292C35;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+#darkmode {
+  margin-right: 40px;
+}
+
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 18px;
+  width: 36px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.list {
+  color: #111;
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 14px;
+  width: 14px;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  -webkit-transform: translateX(18px);
+          transform: translateX(18px);
+}
+
+.checkbox:checked + .label {
+  background-color: #1919E6;
+}
+
+body.dark {
+  color: #fff;
+}
+
+body.dark .list {
+  color: white;
 }
 
 .animate-before {
